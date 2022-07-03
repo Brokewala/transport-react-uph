@@ -1,0 +1,27 @@
+
+.Header{
+    .Header-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .HeaderLInk{
+        text-align: center;
+    }
+    .btn-autha{
+        button{
+            margin-left: -1px;
+        }
+    }
+}
+@media screen and (max-width:1000px) {
+    .header-search{
+        display: none;
+    }
+}
+@media screen and (max-width:490px) {
+    .HeaderLInk{
+        display: none;
+    }
+}

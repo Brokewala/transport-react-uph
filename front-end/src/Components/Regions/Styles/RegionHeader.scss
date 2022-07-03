@@ -1,0 +1,21 @@
+.RegionHeader{
+    .RegionHeader-content{
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid gray;
+            background-color: gray;
+            li{
+                padding: 10px;
+                cursor: pointer;
+                font-weight: 600;
+                &:hover{
+                    background-color: grey;
+                    color: #fff;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

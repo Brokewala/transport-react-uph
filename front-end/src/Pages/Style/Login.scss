@@ -1,0 +1,28 @@
+.Login{
+    background: url("../../../public/img/mr2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 95vh;
+}
+.Login-container{
+        display: flex;
+        justify-content: center;
+    .Login-content{
+        padding: 10px;
+        border-radius: 5px;
+        form{
+            .form-group{
+                display: flex;
+                flex-direction: column;
+                input{
+    
+                }
+            }
+        }
+        .footer-login{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    } 
+}

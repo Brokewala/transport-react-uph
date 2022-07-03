@@ -1,0 +1,33 @@
+.Accueille{
+    padding: 10px;
+    border-radius: 5px;
+    height: 50vh;
+    .Accueille-content{
+        display: flex;
+        justify-content: space-between;
+        .Accueille-body{
+
+        }
+    }
+}
+
+// AccueilleNav
+.AccueilleNav{
+    .AccueilleNav-content{
+        .AccueilleNav-title{
+            text-align: center;
+        }
+        .AccueilleNav-boby{
+            .link-Acc{
+                padding: 10px;
+                &:hover{
+                    background-color: gray;
+                }
+                button{
+                    border: none;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.Admin{
+    border-radius: 5px;
+    padding: 20px;
+    height: 80vh;
+    .Admin-content{
+        display: flex;
+        .Admin-body{
+            flex: 1;
+        }
+    }
+}
+// admin region
+.AdminRegions{
+    .AdminRegions-content{
+        .AdminRegions-body{
+            margin-top: 15px;
+        }
+    }
+}
