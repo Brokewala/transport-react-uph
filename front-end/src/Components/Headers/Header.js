@@ -22,11 +22,6 @@ export default function Header(){
                   {ActiveDrop && <Dropleft handleDropLeft={handleDropLeft} />}
               </div>
               <HeaderLInk/>
-              <div className='header-search'>
-                <form className=" mb-3">
-                <input type="search" className="form-control" id="name" name="name" value=''placeholder="Search..." />
-                </form>
-              </div>
               <div className="btn-autha ">
                 {uid===null && <button type="button" onClick={()=>naviate("/Login")} className="btn btn-outline-light">Login</button>}
                 {uid!==null && <button type="button" onClick={()=>naviate("/Login")} className="btn btn-outline-light">Logout</button>}

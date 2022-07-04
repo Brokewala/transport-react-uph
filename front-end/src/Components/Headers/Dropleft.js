@@ -1,12 +1,14 @@
 import React from 'react';
 import "./Styles/Dropleft.scss";
 import {Link} from "react-router-dom"
+import {Menu} from "@mui/icons-material"
+
 
 const Dropleft = ({handleDropLeft}) => {
     return (
         <div className='Dropleft'>
             <div className='header'>
-                <h3>Voyage</h3>
+                <h3>Voyage <Menu/></h3>
                 <button type='button' onClick={handleDropLeft}>X</button>
             </div>
             <div className='body'>
