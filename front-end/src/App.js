@@ -12,7 +12,7 @@ import Accueille from './Pages/Accueille';
 import Signup from './Pages/Signup';
 import Profil from './Pages/Profil';
 import axios from "axios";
-
+import Voyage from './Pages/Voyage';
 
 
 function App() {
@@ -45,6 +45,7 @@ function App() {
           <Route exact path='/Accueille' element={<Accueille/>} />
           <Route exact path='/Signup' element={<Signup/>} />
           <Route exact path='/Profil' element={<Profil/>} />
+          <Route exact path='/Voyage' element={<Voyage/>} />
           <Route exact path='*' element={<NotFound/>} />
         </Routes>
       </BrowserRouter>

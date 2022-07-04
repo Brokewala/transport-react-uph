@@ -14,8 +14,8 @@ mongoose.connect(process.env.MONGODB_URL).then(()=>console.log('Database is conn
 // variable
 const port=process.env.PORT;
 const userRouter=require("./Routers/User-route");
-// const articleRouter=require("./Router/Article-router");
-// const categoryRouter=require("./Router/Category-router");
+const voyageRoute=require("./Routers/Voyage-route");
+const RegionRoute=require("./Routers/Region-route");
 const { checkUser, requireAuth } = require('./Middleware/Auth-middleware');
 
 // use
@@ -42,8 +42,8 @@ app.get("/jwtid",requireAuth,(req,res)=>{
 
 // router
 app.use("/api/users",userRouter);
-// app.use("/api/articles",articleRouter);
-// app.use("/api/category",categoryRouter);
+app.use("/api/voyage",voyageRoute);
+// app.use("/api/region",RegionRoute);
 
 // server
 app.listen(port,()=>{

@@ -2,7 +2,7 @@ const mongoose=require("mongoose");
 
 // table de voyage //les information de voyage
 const voyageSchema=new mongoose.Schema({
-    firtName:{
+    firstName:{
         type:String,
         required:true,
         trim:true,
@@ -51,6 +51,15 @@ const voyageSchema=new mongoose.Schema({
         type:String,
         trim:true,
         required:true,
+    },
+    payer:{
+        type:Number,
+        default:000,
+
+    },
+    reste:{
+        type:Number,
+        default:000,
     },
 },{
     timestamps:true
