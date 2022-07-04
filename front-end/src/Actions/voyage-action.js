@@ -15,3 +15,12 @@ export const ajouteVoyage=async(data)=>{
     })
     return result;
 }
+
+// afffichier all voyage liste 
+export const getAllVoyageList=async()=>{
+    let data;
+    await instance.get("/").then(res=>{
+        data=res.data
+    })
+    return data;
+}
